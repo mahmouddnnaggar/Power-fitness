@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #070093;
+  --main-duration: 300ms;
+  --black-alternative: #242424;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.bar {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-black-alternative {
+  color: var(--black-alternative);
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.border-primary-color {
+  border-color: var(--primary-color);
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar {
+  font-family: 'Baloo Thambi 2', system-ui;
+}
+
+p,
+pre {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* ^ Start Navbar */
+.navbar .navbar-nav a {
+  border-radius: 19px;
+  transition: color var(--main-duration), background-color var(--main-duration);
+}
+
+.navbar .navbar-nav a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+/* ~ End Navbar */
+
+/* ^ Start Header */
+header.home-section header pre {
+  position: relative;
+  padding-left: 22px;
+  font-size: 18px;
+}
+
+header.home-section header pre::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 4px;
+  border-radius: 10px;
+}
+
+
+header.home-section .buttons button.explore-more:hover {
+  background-color: #fff;
+  border-color: var(--primary-color);
+}
+
+header.home-section .buttons button.get-started:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
