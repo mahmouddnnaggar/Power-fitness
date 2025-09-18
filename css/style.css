@@ -87,7 +87,6 @@ header.home-section header pre::before {
   border-radius: 10px;
 }
 
-
 header.home-section .buttons button.explore-more:hover {
   background-color: #fff;
   border-color: var(--primary-color);
@@ -96,4 +95,82 @@ header.home-section .buttons button.explore-more:hover {
 header.home-section .buttons button.get-started:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+}
+
+/* ^ about section */
+section.about .characters .image:nth-child(2) {
+  top: 50%;
+  left: 38%;
+}
+
+section.about .characters .image:nth-child(3) {
+  top: 0;
+  left: 60%;
+  top: 70px;
+}
+
+section.about img[alt='dumbbell icon'] {
+  margin-top: px;
+}
+
+section.about header p.text {
+  font-size: 18px;
+}
+
+section.about .features {
+  margin-top: 80px;
+}
+
+section.about .features .feature .title img {
+  margin-top: -7px;
+  width: 50px;
+}
+
+section.about .features .feature .info {
+  margin-left: 11px;
+}
+
+section.about .features .feature .info p:nth-child(1) {
+  margin-block: 5px;
+}
+
+section.about .features button:hover {
+  background-color: var(--primary-color);
+}
+
+/* ^ workout section */
+
+section.workout {
+  margin-top: 200px !important;
+  background-image: linear-gradient(var(--primary-color) 65%, #fff 65%);
+  padding-bottom: 80px;
+}
+
+section.workout .title {
+  width: 50%;
+  text-align: center;
+  transform: translateY(-20%);
+  margin-inline: auto;
+}
+
+section.workout .title h2 {
+  font-size: 60px;
+  font-weight: 700;
+  background-image: linear-gradient(#070093 45%, #ffffff);
+  color: transparent;
+  background-clip: text;
+}
+
+section.workout .card {
+  padding: 0 !important;
+  border-radius: 18px !important;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+  overflow: hidden;
+}
+
+section.workout .card a {
+  text-decoration: none !important;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
 }
