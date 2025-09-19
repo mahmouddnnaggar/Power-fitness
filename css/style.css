@@ -1,3 +1,5 @@
+/* ^ global style */
+
 :root {
   --primary-color: #070093;
   --main-duration: 300ms;
@@ -79,7 +81,6 @@ pre {
   background-color: var(--primary-color);
   color: #fff;
 }
-/* ~ End Navbar */
 
 /* ^ Start Header */
 header.home-section header p {
