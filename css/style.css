@@ -287,6 +287,7 @@ main.session-page table thead th {
 
 main.session-page table td {
   vertical-align: middle;
+  padding-bottom: 10px !important;
 }
 
 main.session-page table th:not(:last-of-type),
@@ -364,4 +365,109 @@ main.session-page table td.action ul.action-menu button {
 
 main.session-page table td.action:has(input:checked) input + ul.action-menu {
   display: block;
+}
+
+/* ^ Trainers Page */
+main.trainers-page {
+  min-height: 70vh;
+}
+
+main.trainers-page .search {
+  padding: 12px 20px;
+  border: 1px rgba(128, 128, 128, 0.144) solid;
+  border-radius: 10px;
+}
+
+main.trainers-page .search input {
+  border: none !important;
+  outline: none !important;
+}
+
+main.trainers-page table {
+  border: 1px solid var(--border-table-color);
+  border-radius: 10px;
+  border-collapse: separate;
+  padding: 40px 20px;
+}
+
+main.trainers-page table thead th {
+  padding-bottom: 15px;
+}
+
+main.trainers-page table td {
+  vertical-align: middle;
+  padding-bottom: 20px !important;
+}
+
+main.trainers-page table td .avatar img {
+  display: block;
+  margin-left: 12px;
+}
+
+main.trainers-page table th:not(:last-of-type),
+main.trainers-page table td:not(:last-of-type) {
+  border-right: 1px solid var(--border-table-color);
+}
+
+main.trainers-page table th:not(:first-of-type),
+main.trainers-page table td:not(:first-of-type) {
+  padding-left: 40px;
+}
+
+main.trainers-page table th span {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+main.trainers-page table th span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 150%;
+  background-color: var(--border-table-color);
+}
+
+main.trainers-page table td img[alt='action icon'] {
+  cursor: pointer;
+}
+
+main.trainers-page table td.action input {
+  visibility: hidden;
+}
+
+main.trainers-page table td.action ul.action-menu {
+  width: fit-content;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 180px;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  z-index: 99;
+  display: none;
+}
+
+main.trainers-page table td.action ul.action-menu li {
+  cursor: pointer;
+}
+
+main.trainers-page table td.action ul.action-menu button {
+  padding: 0 !important;
+}
+
+main.trainers-page table td.action:has(input:checked) input + ul.action-menu {
+  display: block;
+}
+
+.modals .card-details ul {
+  margin-left: -20px;
+}
+
+.modals .card-details ul li {
+  cursor: pointer;
 }
