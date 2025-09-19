@@ -82,13 +82,13 @@ pre {
 /* ~ End Navbar */
 
 /* ^ Start Header */
-header.home-section header pre {
+header.home-section header p {
   position: relative;
   padding-left: 22px;
   font-size: 18px;
 }
 
-header.home-section header pre::before {
+header.home-section header p::before {
   content: '';
   position: absolute;
   left: 0;
@@ -97,6 +97,15 @@ header.home-section header pre::before {
   background-color: var(--primary-color);
   width: 4px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  header.home-section header p {
+    padding: 0;
+  }
+  header.home-section header p::before {
+    display: none !important;
+  }
 }
 
 header.home-section .buttons button.explore-more:hover {
@@ -110,6 +119,13 @@ header.home-section .buttons button.get-started:hover {
 }
 
 /* ^ about section */
+section.about {
+  overflow: hidden !important;
+}
+
+section.about .row {
+  overflow: hidden !important;
+}
 section.about .characters .image:nth-child(2) {
   top: 50%;
   left: 38%;
@@ -121,9 +137,6 @@ section.about .characters .image:nth-child(3) {
   top: 70px;
 }
 
-section.about img[alt='dumbbell icon'] {
-  margin-top: px;
-}
 
 section.about header p.text,
 section.why-us header p.text {
@@ -257,170 +270,64 @@ footer .footer-content .location p {
   margin-bottom: 160px !important;
 }
 
-/* ^ Session Page */
-
-main.session-page {
+/* ^ Session, Trainers, Trainees Pages */
+.page {
   min-height: 70vh;
 }
 
-main.session-page .search {
+.page .search {
   padding: 12px 20px;
   border: 1px rgba(128, 128, 128, 0.144) solid;
   border-radius: 10px;
 }
 
-main.session-page .search input {
+.page .search input {
   border: none !important;
   outline: none !important;
 }
 
-main.session-page table {
+.page table {
   border: 1px solid var(--border-table-color);
   border-radius: 10px;
   border-collapse: separate;
   padding: 40px 20px;
 }
 
-main.session-page table thead th {
+.page table thead th {
   padding-bottom: 15px;
 }
 
-main.session-page table td {
-  vertical-align: middle;
-  padding-bottom: 10px !important;
-}
-
-main.session-page table th:not(:last-of-type),
-main.session-page table td:not(:last-of-type) {
-  border-right: 1px solid var(--border-table-color);
-}
-
-main.session-page table th:not(:first-of-type),
-main.session-page table td:not(:first-of-type) {
-  padding-left: 40px;
-}
-
-main.session-page table th span {
-  position: relative;
-  display: block;
-  width: fit-content;
-}
-
-main.session-page table th span::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  height: 1px;
-  width: 150%;
-  background-color: var(--border-table-color);
-}
-
-main.session-page table td img[alt='action icon'] {
-  cursor: pointer;
-}
-
-.btn-outline,
-.btn-fill {
-  border: 1px var(--primary-color) solid;
-  padding: 3px 80px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.btn-fill {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.modal {
-  margin-top: 200px !important;
-}
-
-main.session-page table td.action input {
-  visibility: hidden;
-}
-
-main.session-page table td.action ul.action-menu {
-  width: fit-content;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  min-width: 180px;
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  z-index: 99;
-  display: none;
-}
-
-main.session-page table td.action ul.action-menu li {
-  cursor: pointer;
-}
-
-main.session-page table td.action ul.action-menu button {
-  padding: 0 !important;
-}
-
-main.session-page table td.action:has(input:checked) input + ul.action-menu {
-  display: block;
-}
-
-/* ^ Trainers Page */
-main.trainers-page {
-  min-height: 70vh;
-}
-
-main.trainers-page .search {
-  padding: 12px 20px;
-  border: 1px rgba(128, 128, 128, 0.144) solid;
-  border-radius: 10px;
-}
-
-main.trainers-page .search input {
-  border: none !important;
-  outline: none !important;
-}
-
-main.trainers-page table {
-  border: 1px solid var(--border-table-color);
-  border-radius: 10px;
-  border-collapse: separate;
-  padding: 40px 20px;
-}
-
-main.trainers-page table thead th {
-  padding-bottom: 15px;
-}
-
-main.trainers-page table td {
+.page table td {
   vertical-align: middle;
   padding-bottom: 20px !important;
 }
 
-main.trainers-page table td .avatar img {
+.page.session-page table td {
+  padding-bottom: 10px !important;
+}
+
+.page table td .avatar img {
   display: block;
   margin-left: 12px;
 }
 
-main.trainers-page table th:not(:last-of-type),
-main.trainers-page table td:not(:last-of-type) {
+.page table th:not(:last-of-type),
+.page table td:not(:last-of-type) {
   border-right: 1px solid var(--border-table-color);
 }
 
-main.trainers-page table th:not(:first-of-type),
-main.trainers-page table td:not(:first-of-type) {
+.page table th:not(:first-of-type),
+.page table td:not(:first-of-type) {
   padding-left: 40px;
 }
 
-main.trainers-page table th span {
+.page table th span {
   position: relative;
   display: block;
   width: fit-content;
 }
 
-main.trainers-page table th span::after {
+.page table th span::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -430,15 +337,15 @@ main.trainers-page table th span::after {
   background-color: var(--border-table-color);
 }
 
-main.trainers-page table td img[alt='action icon'] {
+.page table td img[alt='action icon'] {
   cursor: pointer;
 }
 
-main.trainers-page table td.action input {
+.page table td.action input {
   visibility: hidden;
 }
 
-main.trainers-page table td.action ul.action-menu {
+.page table td.action ul.action-menu {
   width: fit-content;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
   background-color: #fff;
@@ -452,16 +359,22 @@ main.trainers-page table td.action ul.action-menu {
   display: none;
 }
 
-main.trainers-page table td.action ul.action-menu li {
+.page table td.action ul.action-menu li {
   cursor: pointer;
 }
 
-main.trainers-page table td.action ul.action-menu button {
+.page table td.action ul.action-menu button {
   padding: 0 !important;
 }
 
-main.trainers-page table td.action:has(input:checked) input + ul.action-menu {
+.page table td.action:has(input:checked) input + ul.action-menu {
   display: block;
+}
+
+/* ^ Modals */
+
+.modal-content {
+  margin-top: 180px;
 }
 
 .modals .card-details ul {
@@ -470,4 +383,39 @@ main.trainers-page table td.action:has(input:checked) input + ul.action-menu {
 
 .modals .card-details ul li {
   cursor: pointer;
+}
+
+.modals .btn-fill,
+.modals .btn-outline {
+  padding: 10px 80px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.modals .btn-fill {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.modals .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.modals #deleteModal .modal-content {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px !important;
+  text-align: center;
+}
+
+.modals #deleteModal .modal-content .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between !important;
+}
+
+.modals #deleteModal .modal-content .buttons button {
+  padding: 5px 25px !important;
 }
