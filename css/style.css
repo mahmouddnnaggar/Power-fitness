@@ -242,3 +242,9 @@ footer .footer-content .time p,
 footer .footer-content .location p {
   line-height: 2.2;
 }
+
+/* ^ About page */
+
+.about-page {
+  margin-bottom: 160px !important;
+}
