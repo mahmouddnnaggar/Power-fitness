@@ -9,6 +9,10 @@ button {
   border: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .bar {
   font-size: 35px;
   letter-spacing: 1px;
@@ -40,6 +44,10 @@ button {
 
 .mb-6 {
   margin-bottom: 4rem;
+}
+
+.fs-18 {
+  font-size: 18px;
 }
 
 h1,
@@ -113,7 +121,8 @@ section.about img[alt='dumbbell icon'] {
   margin-top: px;
 }
 
-section.about header p.text {
+section.about header p.text,
+section.why-us header p.text {
   font-size: 18px;
 }
 
@@ -173,4 +182,63 @@ section.workout .card a {
   font-size: 20px;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+section.workout .indicators {
+  margin-inline: auto;
+  margin-top: 30px;
+  height: 5px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+section.workout .indicators .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--black-alternative);
+  cursor: pointer;
+}
+
+section.workout .indicators .indicator.active {
+  width: 30px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+}
+
+/* ^ Why Us */
+section.why-us .feature .count {
+  width: 110px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+section.why-us .feature p {
+  line-height: 1.8;
+}
+
+/* ^ footer */
+footer .footer-content .logo p {
+  line-height: 1.7;
+}
+
+footer .footer-content .contact ul {
+  margin-left: -35px;
+}
+
+footer .footer-content .contact li p {
+  margin-top: 12px;
+}
+
+footer .footer-content .time p,
+footer .footer-content .location p {
+  line-height: 2.2;
 }
