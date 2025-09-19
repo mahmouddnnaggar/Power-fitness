@@ -9,6 +9,10 @@ button {
   border: none;
 }
 
+.btn:hover {
+  background-color: var(--primary-color) !important;
+}
+
 ul {
   list-style-type: none;
 }
@@ -245,6 +249,119 @@ footer .footer-content .location p {
 
 /* ^ About page */
 
+:root {
+  --border-table-color: #e9ecff;
+}
+
 .about-page {
   margin-bottom: 160px !important;
+}
+
+/* ^ Session Page */
+
+main.session-page {
+  min-height: 70vh;
+}
+
+main.session-page .search {
+  padding: 12px 20px;
+  border: 1px rgba(128, 128, 128, 0.144) solid;
+  border-radius: 10px;
+}
+
+main.session-page .search input {
+  border: none !important;
+  outline: none !important;
+}
+
+main.session-page table {
+  border: 1px solid var(--border-table-color);
+  border-radius: 10px;
+  border-collapse: separate;
+  padding: 40px 20px;
+}
+
+main.session-page table thead th {
+  padding-bottom: 15px;
+}
+
+main.session-page table td {
+  vertical-align: middle;
+}
+
+main.session-page table th:not(:last-of-type),
+main.session-page table td:not(:last-of-type) {
+  border-right: 1px solid var(--border-table-color);
+}
+
+main.session-page table th:not(:first-of-type),
+main.session-page table td:not(:first-of-type) {
+  padding-left: 40px;
+}
+
+main.session-page table th span {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+main.session-page table th span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 150%;
+  background-color: var(--border-table-color);
+}
+
+main.session-page table td img[alt='action icon'] {
+  cursor: pointer;
+}
+
+.btn-outline,
+.btn-fill {
+  border: 1px var(--primary-color) solid;
+  padding: 3px 80px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.btn-fill {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.modal {
+  margin-top: 200px !important;
+}
+
+main.session-page table td.action input {
+  visibility: hidden;
+}
+
+main.session-page table td.action ul.action-menu {
+  width: fit-content;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 180px;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  z-index: 99;
+  display: none;
+}
+
+main.session-page table td.action ul.action-menu li {
+  cursor: pointer;
+}
+
+main.session-page table td.action ul.action-menu button {
+  padding: 0 !important;
+}
+
+main.session-page table td.action:has(input:checked) input + ul.action-menu {
+  display: block;
 }

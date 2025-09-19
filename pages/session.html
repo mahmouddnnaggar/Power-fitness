@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ^ Google Fonts => Baloo Thambi 2 & Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ^ Bootstrap 5.3.8 css file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- ^ Our main css file -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Power fitness | About</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white my-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 py-2 mx-2 fw-bolder fs-5"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 py-2 mx-2 fw-bolder fs-5 text-black-alternative"
+                href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="active nav-link px-3 py-2 mx-2 fw-bolder fs-5 text-black-alternative"
+                href="#"
+                >Session</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 py-2 mx-2 fw-bolder fs-5 text-black-alternative"
+                href="#"
+                >Trainers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 py-2 mx-2 fw-bolder fs-5 text-black-alternative"
+                href="#"
+                >Trainees</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="session-page">
+      <div class="container">
+        <header
+          class="d-flex justify-content-between mt-5 mb-4 align-items-center"
+        >
+          <div class="search d-flex gap-2">
+            <input type="text" placeholder="Search Here..." />
+            <img src="../images/search icon.svg" alt="search icon" />
+          </div>
+
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#addModal"
+            class="btn bg-primary-color text-white fw-medium rounded-pill px-3 py-3"
+          >
+            + Add Session
+          </button>
+        </header>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th><span>Data</span></th>
+              <th><span>Session</span></th>
+              <th><span>Trainer</span></th>
+              <th><span>Email</span></th>
+              <th><span>Action</span></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span>
+                  26/02/2020 <br />
+                  11.30 AM
+                </span>
+              </td>
+
+              <td>
+                <span>Yoga</span>
+              </td>
+
+              <td>
+                <span>Jimmie Schroeder</span>
+              </td>
+
+              <td>
+                <span>Jimmie@gmail.com</span>
+              </td>
+
+              <td class="action position-relative">
+                <label for="menu-1">
+                  <img src="../images/action dots.svg" alt="action icon" />
+                </label>
+
+                <input type="checkbox" id="menu-1" class="" />
+
+                <ul class="action-menu">
+                  <li class="d-flex align-content-center gap-3 mb-4">
+                    <img src="../images/info 1.svg" alt="info icon" />
+                    <span>View Details</span>
+                  </li>
+
+                  <li
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    class="d-flex align-content-center gap-3 mb-4"
+                  >
+                    <img src="../images/edit.svg" alt="info icon" />
+                    <span>Edit</span>
+                  </li>
+
+                  <li class="d-flex align-content-center gap-3">
+                    <img src="../images/x-circle 1.svg" alt="info icon" />
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                      class="bg-white"
+                    >
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="modals">
+      <div
+        class="modal fade mt-6"
+        id="addModal"
+        tabindex="-1"
+        aria-labelledby="addModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content p-5">
+            <header class="mb-4">
+              <h3 class="text-primary-color">Add Session</h3>
+            </header>
+
+            <form>
+              <div class="d-flex justify-content-between gap-4">
+                <div class="date flex-grow-1">
+                  <h5>Date</h5>
+                  <input type="date" class="form-control" />
+                </div>
+
+                <div class="session-name flex-grow-1">
+                  <h5>Session</h5>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="trainer-name flex-grow-1">
+                  <h5>Trainer</h5>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="email flex-grow-1">
+                  <h5>Email</h5>
+                  <input type="email" class="form-control" />
+                </div>
+              </div>
+            </form>
+
+            <footer class="d-flex justify-content-between mt-4">
+              <button class="btn-outline">Back</button>
+
+              <button class="btn-fill">Add</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade mt-6"
+        id="editModal"
+        tabindex="-1"
+        aria-labelledby="editModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content p-5">
+            <header class="mb-4">
+              <h3 class="text-primary-color">Edit Session</h3>
+            </header>
+
+            <form>
+              <div class="d-flex justify-content-between gap-4">
+                <div class="date flex-grow-1">
+                  <h5>Date</h5>
+                  <input type="date" class="form-control" />
+                </div>
+
+                <div class="session-name flex-grow-1">
+                  <h5>Session</h5>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="trainer-name flex-grow-1">
+                  <h5>Trainer</h5>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="email flex-grow-1">
+                  <h5>Email</h5>
+                  <input type="email" class="form-control" />
+                </div>
+              </div>
+            </form>
+
+            <footer class="d-flex justify-content-between mt-4">
+              <button class="btn-outline">Back</button>
+
+              <button class="btn-fill">Add</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="deleteModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content p-2">
+            <p class="fs-3 text-primary-color">Are you sure to Delete this?</p>
+
+            <div class="buttons d-flex gap-2 justify-content-center">
+              <button class="btn-outline px-3">NO</button>
+              <button class="btn-fill px-3">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5">
+      <div
+        class="bar bg-primary-color d-flex py-4 text-white fw-bolder align-items-center"
+      >
+        <p class="py-0 my-0 overflow-hidden text-nowrap">
+          outdoor & online trainers
+          <img src="../images/star.svg" alt="star icon" /> personal training
+          <img src="../images/star.svg" alt="star icon" /> live classes
+          <img src="../images/star.svg" alt="star icon" /> personal trainers
+          <img src="../images/star.svg" alt="star icon" /> personal training
+        </p>
+      </div>
+
+      <div class="footer-content my-5">
+        <div class="container">
+          <div class="row row-cols-2 row-cols-md-4 g-5">
+            <div class="logo">
+              <div class="inner">
+                <div class="image">
+                  <img src="../images/logo.svg" alt="our logo" />
+                </div>
+                <p class="fs-18 mt-2">
+                  Push harder, go further. Your <br />
+                  fitness journey starts today!
+                </p>
+              </div>
+            </div>
+
+            <div class="contact">
+              <h4 class="fw-bolder text-uppercase mb-4">contact us</h4>
+
+              <ul>
+                <li class="d-flex align-items-center gap-2">
+                  <div class="icon">
+                    <img src="../images/phone icon.svg" alt="phone icon" />
+                  </div>
+                  <p>+91 123 456 789</p>
+                </li>
+
+                <li class="d-flex align-items-center gap-2">
+                  <div class="icon">
+                    <img src="../images/message icon.svg" alt="message icon" />
+                  </div>
+                  <p>info@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="time">
+              <h4 class="fw-bolder text-uppercase mb-4">our gym timing</h4>
+
+              <p>
+                Mon - Fri : 08:00 AM - 10:00 PM <br />Sat - Sun : 08:00 AM -
+                09:00 PM
+              </p>
+            </div>
+
+            <div class="location">
+              <h4 class="fw-bolder text-uppercase mb-4">our location</h4>
+
+              <p>
+                2715 Ash Dr. San Jose, South <br />
+                Dakota 83475
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ^ Bootstrap 5.3.8 js file -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
