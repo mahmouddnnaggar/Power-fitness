@@ -138,7 +138,6 @@ section.about .characters .image:nth-child(3) {
   top: 70px;
 }
 
-
 section.about header p.text,
 section.why-us header p.text {
   font-size: 18px;
@@ -419,4 +418,31 @@ footer .footer-content .location p {
 
 .modals #deleteModal .modal-content .buttons button {
   padding: 5px 25px !important;
+}
+
+/* ^ media query */
+
+/* ^ about section */
+
+@media screen and (max-width: 576px) {
+  section.about .characters {
+    transform: translateX(-40%);
+  }
+
+  section.about .features {
+    text-align: center;
+  }
+
+  section.about .features .title {
+    justify-content: center;
+    margin-left: -15px;
+  }
+
+  section.workout .title h2 {
+    font-size: 40px;
+  }
+
+  section.workout .title p {
+    font-size: 18px !important;
+  }
 }
