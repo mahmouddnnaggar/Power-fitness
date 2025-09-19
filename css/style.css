@@ -110,12 +110,14 @@ header.home-section header p::before {
 }
 
 header.home-section .buttons button.explore-more:hover {
-  background-color: #fff;
+  color: #fff;
   border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 header.home-section .buttons button.get-started:hover {
-  background-color: var(--primary-color);
+  background-color: #fff !important;
+  color: var(--primary-color) !important;
   border-color: var(--primary-color);
 }
 
